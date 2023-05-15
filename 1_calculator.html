@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variable Operations</title>
+  <script>
+    function calculator() {
+      // Get the input values
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      
+      // Perform the operations
+      var add = num1 + num2;
+      var sub = num1 - num2;
+      var multi = num1 * num2;
+      var divi = num1 / num2;
+
+      // Display the results
+      document.getElementById("add").textContent = "Addition: " + add;
+      document.getElementById("sub").textContent = "Subtraction: " + sub;
+      document.getElementById("multi").textContent = "Multiplication: " + multi;
+      document.getElementById("divi").textContent = "Division: " + divi;
+    }
+  </script>
+</head>
+<body>
+  <h1>Variable Operations</h1>
+
+  <label for="num1">First Number:</label>
+  <input type="number" id="num1"><br>
+
+  <label for="num2">Second Number:</label>
+  <input type="number" id="num2"><br>
+
+  <button onclick="calculator()">calculat</button>
+
+  <h2>Results:</h2>
+  <p id="add"></p>
+  <p id="sub"></p>
+  <p id="multi"></p>
+  <p id="divi"></p>
+</body>
+</html>
+
+
+
